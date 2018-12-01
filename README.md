@@ -4,7 +4,7 @@
 
 Three-dimensional content creation has been a central research area in computer graphics for decades. The main challenge is to minimize manual intervention, while still allowing the creation of a variety of plausible 3D objects.In this work, we present a global-to-local generative model to synthesize 3D man-made shapes; see Fig. 1 as an example. It is based on an adversarial network to construct a global structure of the shape, with local part labels. The global discriminator is trained to distinguish between the whole real and generated 3D shapes, while the local discriminators focus on the individual local parts. A novel conditional auto-encoder is then introduced to enhance the part synthesis. 
 
-![overview](overview.png)
+![overview](overview.jpg)
 
 ### Usage
 
