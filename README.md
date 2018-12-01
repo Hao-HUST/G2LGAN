@@ -12,7 +12,7 @@ For more details, please refer to our [paper](http://202.182.120.255/file/upload
 ![overview](overview.jpg)
 
 ### Usage
-The rest part of code will coming soon.
+
 ### License
 Our code is released under MIT License (see LICENSE file for details).
 
@@ -20,13 +20,13 @@ Our code is released under MIT License (see LICENSE file for details).
 
 Please cite the paper in your publications if it helps your research:
 ```
-@article{Hu18,
-title = {Predictive and Generative Neural Networks for Object Functionality},
-author = {Ruizhen Hu and Zihao Yan and Jingwen Zhan and Oliver van Kaick and Ariel Shamir and Hao Zhang and Hui Huang},
-journal = {ACM Transactions on Graphics (Proc. SIGGRAPH)},
+@article{G2L18,
+title = {Global-to-Local Generative Model for 3D Shapes},
+author = {Hao Wang and Nadav Schor and Ruizhen Hu and Haibin Huang and Daniel Cohen-Or and Hui Huang},
+journal = {ACM Transactions on Graphics (Proc. SIGGRAPH ASIA)},
 volume = {37},
-number = {4},
-pages = {151:1--151:14},  
+number = {6},
+pages = {214:1—214:10},  
 year = {2018},
-}
+} 
 ```
