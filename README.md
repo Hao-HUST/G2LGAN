@@ -12,7 +12,7 @@ For more details, please refer to our [paper](http://202.182.120.255/file/upload
 ![overview](overview.jpg)
 
 ### Usage
-
+The rest part of code will coming soon.
 ### License
 Our code is released under MIT License (see LICENSE file for details).
 
