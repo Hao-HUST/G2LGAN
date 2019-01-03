@@ -12,7 +12,50 @@ For more details, please refer to our [paper](http://202.182.120.255/file/upload
 ![overview](overview.jpg)
 
 ### Usage
-The rest part of code will coming soon.
+In our experiment, all the codes are tested under **Tensorflow 1.2.1** GPU version and **Python 2.7** on **Ubuntu 16.04**.
+
+#### Train G2LGAN
+
+To train a G2LGAN model to generate initial 3D shapes with semantic parts:
+
+        cd G2LGAN
+        python G2LGAN_train.py
+
+To see all optional arguments for training:
+
+        python G2LGAN_train.py -h
+        
+#### Generate Shapes from a pre-trained G2LGAN model
+
+You can also sample some 3D shapes from pre-trained model:
+
+        cd G2LGAN
+        python G2LGAN_test.py 
+        
+#### Train Part Refiner
+
+To train a Part Refiner model to refine the initial 3D shapes:
+
+        cd Part_Refiner
+        python train_part_refiner.py  
+        
+ #### Use the pre-trained Part Refiner to refine the initial shape
+
+Based on the pre-trained PR model, you can refine the initial generated shapes from G2LGAN by:
+
+        cd Part_Refiner
+        python test_part_refiner.py         
+        
+
+#### Visulizaton Tool
+
+If you want to visualize the trainig data(.mat files) or generated shapes(combined by a .npy files), you can use the Visulizaton Tool we provide, just run:
+
+        cd visualization_tool
+        python application.py
+
+You can manually choose the shape file on the tool, and take the **visualization_tool/operation guide.pdf** as reference.   
+        
 
 ### License
 Our code is released under MIT License (see LICENSE file for details).
