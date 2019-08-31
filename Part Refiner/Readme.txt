@@ -6,10 +6,7 @@ In the folder of "data_preparing_for_PR", we need to prepare the training data f
 
 Step 1: On the folder named "seperate_training_data", we use the "seperate_part_mat.py" file to seperate each semantic parts from training data and combine these parts into a big npy file.
 
-Step 2: On the "remove_empty" folder, we use  "remove_empty.py" to remove the empty volume from the part npy file from step 1.
-
-
-Step3: On the "gen_pair" folder, we need to make input and output pair for the part refiner. 
+Step2: On the "gen_pair" folder, we need to make input and output pair for the part refiner. 
 
 ## Training the part refiner
 
