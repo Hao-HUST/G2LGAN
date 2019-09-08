@@ -1,6 +1,5 @@
 The part refiner is used to refine the initial generated shapes with res 32 from genertor to more realistic shape with res 64.
 
-
 ## Preparing the training data
 In the folder of "data_preparing_for_PR", we need to prepare the training data for part refiner, and initial data for PR can be downloaded from https://drive.google.com/open?id=1nTEBVyKg2UEwmrlewb9TLCc-ILGmq2_5
 
