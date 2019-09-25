@@ -131,15 +131,16 @@ def Loading_data(training_data_path, part_num):
     pairs = pairs.astype(int)
 
 
-
+    '''
     print 'Loading Test Data'
 
     test_set = load_data(training_data_path + '/test/test_chair.npy')
     test_set_labels = load_data(training_data_path + '/test/test_label_chair.npy')
     print 'Finished loading data'
+    '''
 
-
-    return data, data_64, pairs, test_set, test_set_labels
+    #return data, data_64, pairs, test_set, test_set_labels
+    return data, data_64, pairs
 
 
 
@@ -148,7 +149,8 @@ def train():
     DATA_PATH = os.path.join(BASE_DIR, 'training_data/'+obj)
 
     #Loading traing data pair for PR
-    data, data_64, pairs, test_set, test_set_labels =  Loading_data(DATA_PATH,label_num)
+    #data, data_64, pairs, test_set, test_set_labels =  Loading_data(DATA_PATH,label_num)
+    data, data_64, pairs =  Loading_data(DATA_PATH,label_num)
 
     # setup network
     network = nw.Network(BATCH_SIZE, weight, is_training, skip, label_num, loss_type, output_layer, device_ID)
@@ -196,7 +198,8 @@ def train():
             if epoch % 100 == 1:
                 saver.save(sess, save_path =(MODEL_SAVE + '/' + str(epoch) + '.cptk'))
                 print(epoch, 'Model saved')
-
+		
+                '''
                 rec = sess.run(network.iobj, feed_dict={network.x_obj: x_obj, network.y_obj: y_obj, network.label: label})
 
 
@@ -231,18 +234,8 @@ def train():
                                 else:
                                     rec_chairs[c, row, col, dep] = [1, 0, 0, 0, 0]
                 np.save(SAMPLE_SAVE + str(epoch) + '_test', rec_chairs)
+                '''
 
-
-
-
-
-
-
-
-
-
-
-    
 if __name__ == "__main__":
     train()
 
